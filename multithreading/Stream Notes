@@ -1,0 +1,17 @@
+Stream API is a way to express and process collections of objects
+ Enable us to perform operations like filtering, mapping, reducing and sorting.
+
+ How to creat Stream
+ ->>
+    Stream<T> stream;
+ -->
+
+ The features of JAVA Stream
+ 1. stream is not a data strcture it just takes input from collections arrays or i/o channels
+ 2. do not modifiy the original data, only produce results using thier methods
+ 3. intermediate operations like filter, map ,etc are lazy and return another stream, -> you can chain them together.
+ 4. a terminal  operations like collect, forEach, count ends the stream and gives final result.
+
+
+  INPUT --> OPERATION 1 -> operations 2 -> oeprations  .... n -> output
+
