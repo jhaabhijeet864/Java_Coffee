@@ -1,6 +1,5 @@
 package Practical;
 
-// Renamed to CustomRunnable so we don't conflict with Java's built-in interface
 class CustomRunnable implements Runnable {
 
     public void run() {
@@ -14,7 +13,6 @@ class CustomRunnable implements Runnable {
     public static void main(String args[]) {
         CustomRunnable r = new CustomRunnable();
 
-        // Because we fixed the naming conflict, we can just use standard 'Thread' now
         Thread t = new Thread(r);
 
         System.out.println("Starting Runnable Thread...");
