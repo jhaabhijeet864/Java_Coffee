@@ -1,21 +1,23 @@
 package Practical;
 
-interface A {
-    void show();
-}
-interface B {
-    void display();
-}
-class Multi implements A, B {
-    public void show() {
-        System.out.println("Interface A");
+class A{
+    int a;
+    A(int x){
+        this.a=x;
     }
-    public void display() {
-        System.out.println("Interface B");
+}
+class SuperThis extends A{
+    int b;
+    SuperThis(int x,int y){
+        super(x);
+        this.b=y;
     }
-    public static void main(String[] args) {
-        Multi obj = new Multi();
+    void show(){
+        System.out.println(a);
+        System.out.println(b);
+    }
+    public static void main(String args[]){
+        SuperThis obj=new SuperThis(5,15);
         obj.show();
-        obj.display();
     }
 }
