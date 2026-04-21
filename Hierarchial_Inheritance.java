@@ -4,6 +4,9 @@ class Animal {
     }
 }
 
+
+class Abhijeet {
+}
 class Dog extends Animal {
     public void sound() {
         System.out.println("Hi, I can bark ");
